@@ -1,3 +1,6 @@
+#PatriciaXmusic
+#Made copyright © Blaze
+
 from asyncio.queues import QueueEmpty
 from cache.admins import set
 from pyrogram import Client
@@ -106,4 +109,4 @@ async def skip(_, message: Message):
 @errors
 async def admincache(client, message: Message):
     set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
-    #await message.reply_text("✯𝗩𝗖𝗣𝗹𝗮𝘆𝗕𝗼𝘁✯=❇️ Admin cache refreshed!")
+    #await message.reply_text("⚜️𝐏𝐚𝐭𝐫𝐢𝐜𝐢𝐚𝐗𝐦𝐮𝐬𝐢𝐜⚜️=❇️ Admin cache refreshed!")
